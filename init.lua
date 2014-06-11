@@ -1,7 +1,7 @@
 --register node
 minetest.register_node("morestones:limestone", {
 description = "Lime stone",
-tiles = {"morestones_limestone.png"},
+tiles = {"stones_plus_limestone.png"},
 is_ground_content = true,
 groups = {cracky=2, stone=1},
 legacy_mineral = true,
@@ -11,7 +11,7 @@ sounds = default.node_sound_stone_defaults(),
 
 minetest.register_node("morestones:marble", {
 description = "Marble",
-tiles = {"morestones_marble.png"},
+tiles = {"stones_plus_marble.png"},
 is_ground_content = true,
 groups = {cracky=2, stone=1},
 legacy_mineral = true,
@@ -20,7 +20,7 @@ sounds = default.node_sound_stone_defaults(),
 
 minetest.register_node("morestones:slate", {
 description = "Slate",
-tiles = {"morestones_slate.png"},
+tiles = {"stones_plus_slate.png"},
 is_ground_content = true,
 groups = {cracky=2, stone=1},
 legacy_mineral = true,
@@ -29,7 +29,7 @@ sounds = default.node_sound_stone_defaults(),
 
 minetest.register_node("morestones:travertine", {
 description = "Travertine",
-tiles = {"morestones_travertine.png"},
+tiles = {"stones_plus_travertine.png"},
 is_ground_content = true,
 groups = {cracky=2, stone=1},
 legacy_mineral = true,
