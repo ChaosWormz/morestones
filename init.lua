@@ -85,3 +85,6 @@ height_min = -31000,
 height_max = -1500,
 flags = "absheight",
 })
+
+dofile(minetest.get_modpath("morestones") .. "/stairs.lua")
+
