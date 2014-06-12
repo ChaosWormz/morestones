@@ -42,11 +42,11 @@ minetest.register_ore({
     ore_type = "scatter",
     ore = "morestones:limestone",
     wherein = "default:stone",
-    clust_scarcity = 15*15*15,
-    clust_num_ores = 12,
-    clust_size = 4,
+    clust_scarcity = 21*21*21,
+    clust_num_ores = 10,
+    clust_size = 6,
     height_min = -31000,
-    height_max = -1000,
+    height_max = -800,
     flags = "absheight",
 })
 
