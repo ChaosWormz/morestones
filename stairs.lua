@@ -10,7 +10,7 @@ stairs.register_stair_and_slab(
 stairs.register_stair_and_slab(
     "marble", "morestones:marble",
 	{cracky=3},
-	{"stones_plus_marble.png"},
+	{"mtz_marble_pink.png"},
 	"Marble stair",
 	"Marble slab")
 

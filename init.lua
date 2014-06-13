@@ -11,7 +11,7 @@ minetest.register_node("morestones:limestone", {
 
 minetest.register_node("morestones:marble", {
     description = "Marble",
-    tiles = {"stones_plus_marble.png"},
+    tiles = {"mtz_marble_pink.png"},
     is_ground_content = true,
     groups = {cracky=2, stone=1},
     legacy_mineral = true,
