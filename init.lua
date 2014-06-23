@@ -76,7 +76,7 @@ minetest.register_ore({
 
 minetest.register_ore({
     ore_type = "scatter",
-    ore = "travertine",
+    ore = "morestones:travertine",
     wherein = "default:stone",
     clust_scarcity = 25*25*25,
     clust_num_ores = 18,
