@@ -36,6 +36,24 @@ minetest.register_node("morestones:travertine", {
     sounds = default.node_sound_stone_defaults(),
 })
 
+minetest.register_node("morestones:syenite", {
+    description = "Syenite",
+    tiles = {"stones_plus_syenite.png"},
+    is_ground_content = true,
+    groups = {cracky=2, stone=1},
+    legacy_mineral = true,
+    sounds = default.node_sound_stone_defaults(),
+})
+
+minetest.register_node("morestones:comendite", {
+    description = "Comendite",
+    tiles = {"stones_plus_comendite.png"},
+    is_ground_content = true,
+    groups = {cracky=2, stone=1},
+    legacy_mineral = true,
+    sounds = default.node_sound_stone_defaults(),
+})
+
 --register ores for mapgen
 
 minetest.register_ore({
@@ -83,6 +101,30 @@ minetest.register_ore({
     clust_size = 14,
     height_min = -31000,
     height_max = -1500,
+    flags = "absheight",
+})
+
+minetest.register_ore({
+    ore_type = "scatter",
+    ore = "morestones:syenite",
+    wherein = "default:stone",
+    clust_scarcity = 25*25*25,
+    clust_num_ores = 8,
+    clust_size = 15,
+    height_min = -31000,
+    height_max = -1000,
+    flags = "absheight",
+})
+
+minetest.register_ore({
+    ore_type = "scatter",
+    ore = "morestones:comendite",
+    wherein = "default:stone",
+    clust_scarcity = 18*18*18,
+    clust_num_ores = 4,
+    clust_size = 10,
+    height_min = -31000,
+    height_max = -100,
     flags = "absheight",
 })
 

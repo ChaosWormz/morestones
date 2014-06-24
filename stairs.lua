@@ -30,3 +30,20 @@ stairs.register_stair_and_slab(
 	"Travertine stair",
 	"Travertine slab"
 )
+
+-- comendite Stone
+stairs.register_stair_and_slab(
+    "comendite", "morestones:comendite",
+	{cracky=3},
+	{"stones_plus_comendite.png"},
+	"Comendite stair",
+	"Comendite slab")
+
+-- syenite Stone
+stairs.register_stair_and_slab(
+    "syenite", "morestones:syenite",
+	{cracky=3},
+	{"stones_plus_syenite.png"},
+	"Syenite stair",
+	"Syenite slab"
+)
