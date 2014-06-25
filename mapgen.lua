@@ -22,7 +22,7 @@ minetest.register_on_generated(function(minp, maxp, seed)
 		return
 	end
 
-	if math.random() < 0.85 then
+	if math.random() < 0.75 then
 		return
 	end
 
