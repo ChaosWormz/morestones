@@ -10,7 +10,7 @@ local noiseparams = {
 	scale = 1,
 	spread = {x=256, y=256, z=256},
 	seed = -400000000089,
-	octaves = 2,
+	octaves = 3,
 	persist = 0.6
 }
 
@@ -22,10 +22,9 @@ minetest.register_on_generated(function(minp, maxp, seed)
 		return
 	end
 
-	--if math.random() < 0.9 then
-	--	return
-	--end
-
+	if math.random() < 0.85 then
+		return
+	end
 
 	local t1 = os.clock()
 
@@ -65,8 +64,10 @@ minetest.register_on_generated(function(minp, maxp, seed)
 					sdepth = 0
 				end
 				if sdepth > 3 then
-					if data[vi] == c_stone and noise[ni] < 0.7 and math.random() <= 0.5 then
-						data[vi] = c_marble
+					if data[vi] == c_stone and noise[ni] > -0.1 and noise[ni] < 0.8  then
+						if math.random() <= 0.7 then
+							data[vi] = c_marble
+						end
 						layers = layers + 1
 						vi = vi + 1
 						ni = ni + 1
