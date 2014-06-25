@@ -129,4 +129,5 @@ minetest.register_ore({
 })
 
 dofile(minetest.get_modpath("morestones") .. "/stairs.lua")
+dofile(minetest.get_modpath("morestones") .. "/mapgen.lua")
 
