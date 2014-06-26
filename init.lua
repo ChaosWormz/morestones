@@ -20,7 +20,7 @@ minetest.register_node("morestones:marble", {
 
 minetest.register_node("morestones:slate", {
     description = "Slate",
-    tiles = {"stones_plus_slate.png"},
+    tiles = {"mtz_slate_native.png"},
     is_ground_content = true,
     groups = {cracky=2, stone=1},
     legacy_mineral = true,
