@@ -69,27 +69,25 @@ minetest.register_ore({
 })
 
 minetest.register_ore({
-    ore_type = "scatter",
+    ore_type = "sheet",
     ore = "morestones:marble",
     wherein = "default:stone",
-    clust_scarcity = 21*21*21,
-    clust_num_ores = 12,
-    clust_size = 7,
-    height_min = -31000,
-    height_max = -1500,
-    flags = "absheight",
+		--wherein = "air",
+		clust_size = 4,
+    height_min = -500,
+    height_max = 200,
+		--noise_threshhold = -0.2,
+		noise_params =  {offset=0, scale=1, spread={x=200, y=200, z=200}, seed=1619, octaves=2, persist=0.35}
 })
 
 minetest.register_ore({
-    ore_type = "scatter",
+    ore_type = "sheet",
     ore = "morestones:slate",
     wherein = "default:stone",
-    clust_scarcity = 21*21*21,
-    clust_num_ores = 16,
-    clust_size = 12,
-    height_min = -31000,
-    height_max = -2100,
-    flags = "absheight",
+    clust_size = 3,
+    height_min = -100,
+    height_max = 50,
+		noise_params =  {offset=137, scale=1, spread={x=225, y=100, z=225}, seed=739, octaves=2, persist=0.25}
 })
 
 minetest.register_ore({
@@ -129,5 +127,3 @@ minetest.register_ore({
 })
 
 dofile(minetest.get_modpath("morestones") .. "/stairs.lua")
-dofile(minetest.get_modpath("morestones") .. "/mapgen.lua")
-
