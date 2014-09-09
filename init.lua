@@ -62,7 +62,7 @@ minetest.register_ore({
     wherein = "default:stone",
     clust_scarcity = 19*19*19,
     clust_num_ores = 10,
-    clust_size = 6,
+    clust_size = 12,
     height_min = -31000,
     height_max = -800,
     flags = "absheight",
@@ -72,22 +72,21 @@ minetest.register_ore({
     ore_type = "sheet",
     ore = "morestones:marble",
     wherein = "default:stone",
-		clust_size = 4,
-    height_min = -500,
+	clust_size = 4,
+    height_min = -1500,
     height_max = 200,
-		noise_params =  {offset=0, scale=1, spread={x=175, y=200, z=175}, seed=1619, octaves=2, persist=0.35}
+	noise_params =  {offset=0, scale=1, spread={x=175, y=200, z=175}, seed=1619, octaves=2, persist=0.35}
 })
 
 minetest.register_ore({
-    ore_type = "scatter",
+    ore_type = "sheet",
     ore = "morestones:slate",
     wherein = "default:stone",
-		clust_scarcity = 4*4*4,
-    clust_size = 5,
-    height_min = -150,
-    height_max = 150,
-		noise_threshhold = 0.6,
-		noise_params =  {offset=137, scale=1, spread={x=525, y=500, z=525}, seed=739, octaves=2, persist=0.4}
+	--	clust_scarcity = 4*4*4,
+    clust_size = 1,
+    height_min = -500,
+    height_max = 100,
+	noise_params =  {offset=0, scale=2, spread={x=256, y=256, z=256}, seed=7120, octaves=2, persist=0.45}
 })
 
 minetest.register_ore({
@@ -96,7 +95,7 @@ minetest.register_ore({
     wherein = "default:stone",
     clust_scarcity = 25*25*25,
     clust_num_ores = 18,
-    clust_size = 14,
+    clust_size = 24,
     height_min = -31000,
     height_max = -1500,
     flags = "absheight",
