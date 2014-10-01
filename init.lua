@@ -102,6 +102,16 @@ minetest.register_ore({
 })
 
 minetest.register_ore({
+    ore_type = "sheet",
+    ore = "morestones:travertine",
+    wherein = "default:desert_stone",
+	clust_size = 5,
+    height_min = -20,
+    height_max = 500,
+	noise_params =  {offset=0, scale=1, spread={x=210, y=220, z=210}, seed=9896, octaves=2, persist=0.5}
+})
+
+minetest.register_ore({
     ore_type = "scatter",
     ore = "morestones:syenite",
     wherein = "default:stone",
