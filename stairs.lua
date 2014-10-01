@@ -25,7 +25,7 @@ stairs.register_stair_and_slab(
 -- travertine Stone
 stairs.register_stair_and_slab(
     "travertine", "morestones:travertine",
-	{cracky=3},
+	{cracky=2},
 	{"stones_plus_travertine.png"},
 	"Travertine stair",
 	"Travertine slab"
@@ -34,7 +34,7 @@ stairs.register_stair_and_slab(
 -- comendite Stone
 stairs.register_stair_and_slab(
     "comendite", "morestones:comendite",
-	{cracky=3},
+	{cracky=1},
 	{"stones_plus_comendite.png"},
 	"Comendite stair",
 	"Comendite slab")

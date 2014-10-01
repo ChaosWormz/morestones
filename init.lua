@@ -49,7 +49,7 @@ minetest.register_node("morestones:comendite", {
     description = "Comendite",
     tiles = {"stones_plus_comendite.png"},
     is_ground_content = true,
-    groups = {cracky=2, stone=1},
+    groups = {cracky=1, stone=1, level=2},
     legacy_mineral = true,
     sounds = default.node_sound_stone_defaults(),
 })
@@ -124,5 +124,6 @@ minetest.register_ore({
     height_max = -100,
     flags = "absheight",
 })
+
 
 dofile(minetest.get_modpath("morestones") .. "/stairs.lua")
