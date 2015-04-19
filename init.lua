@@ -13,7 +13,7 @@ minetest.register_node("morestones:marble", {
     description = "Marble",
     tiles = {"mtz_marble_pink.png"},
     is_ground_content = true,
-    groups = {cracky=2, stone=1},
+    groups = {cracky=2, stone=1, marble=1},
     legacy_mineral = true,
     sounds = default.node_sound_stone_defaults(),
 })
