@@ -130,3 +130,6 @@ minetest.register_ore({
 
 dofile(minetest.get_modpath("morestones") .. "/stairs.lua")
 
+if minetest.get_modpath("moreblocks") then
+	dofile(minetest.get_modpath("morestones") .. "/moreblocks.lua")
+end
