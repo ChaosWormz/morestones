@@ -130,6 +130,6 @@ minetest.register_ore({
 
 dofile(minetest.get_modpath("morestones") .. "/stairs.lua")
 
-if minetest.get_modpath("moreblocks") then
+if minetest.global_exists("stairsplus") then
 	dofile(minetest.get_modpath("morestones") .. "/moreblocks.lua")
 end
